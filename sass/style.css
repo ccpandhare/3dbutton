@@ -19,7 +19,9 @@ header div {
   font-family: sans-serif;
   color: white; }
 header div.github {
-  min-width: 34%; }
+  min-width: 34%;
+  color: purple;
+  text-decoration: none; }
 
 section#main {
   display: flex;
