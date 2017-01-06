@@ -1,0 +1,90 @@
+*
+  margin: 0
+  padding: 0
+
+header
+  display: block
+  position: relative
+  background: #333
+  height: 50px
+  width: 100%
+
+header
+  div
+    display: flex
+    height: 50px
+    min-width: 33%
+    float: left
+    align-items: center
+    justify-content: center
+    font-family: sans-serif
+    color: white
+
+  div.github
+    min-width: 34%
+
+section#main
+  display: flex
+  height: calc(100% - 100px)
+  align-items: center
+  justify-content: center
+  position: relative
+  background-color: white
+
+div.buttongroup
+  display: inline-block
+  perspective: 100px
+  perspective-origin: right
+
+div.buttongroup
+  label
+    display: flex
+    height: 50px
+    width: 100px
+    align-items: center
+    justify-content: center
+    float: left
+    background: red
+    color: #fff
+    font-family: sans-serif
+    border: 1px solid black
+    box-sizing: border-box
+    transform: rotateY(-10deg)
+    transform-origin: left
+    transition: all 100ms
+    z-index: 1
+
+  span
+    display: flex
+    height: 50px !important
+    width: 50px
+    align-items: center
+    justify-content: center
+    float: right
+    border: 1px solid black
+    box-sizing: border-box
+    transform: rotateY(90deg) translateX(-17px) translateZ(-2px)
+    transform-origin: left
+    background: red
+    transition: all 100ms
+    z-index: 0
+
+div.buttongroup:hover
+  label
+    transform: none
+    cursor: pointer
+    font-weight: 100
+  span
+    transform: rotateY(120deg)
+    cursor: pointer
+
+footer
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  height: 50px
+  background: #333
+  color: #fff
+  font-family: monospace
+  text-align: center
