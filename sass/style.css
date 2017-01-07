@@ -19,9 +19,9 @@ header div {
   font-family: sans-serif;
   color: white; }
 header div.github {
-  min-width: 34%;
-  color: purple;
-  text-decoration: none; }
+  min-width: 34%; }
+header div.github a {
+  color: white; }
 
 section#main {
   display: flex;
@@ -31,12 +31,12 @@ section#main {
   position: relative;
   background-color: white; }
 
-div.buttongroup {
+div.buttongroup1 {
   display: inline-block;
   perspective: 100px;
   perspective-origin: right; }
 
-div.buttongroup label {
+div.buttongroup1 label {
   display: flex;
   height: 50px;
   width: 100px;
@@ -52,7 +52,7 @@ div.buttongroup label {
   transform-origin: left;
   transition: all 100ms;
   z-index: 1; }
-div.buttongroup span {
+div.buttongroup1 span {
   display: flex;
   height: 50px !important;
   width: 50px;
@@ -67,13 +67,18 @@ div.buttongroup span {
   transition: all 100ms;
   z-index: 0; }
 
-div.buttongroup:hover label {
+div.buttongroup1:hover label {
   transform: none;
   cursor: pointer;
   font-weight: 100; }
-div.buttongroup:hover span {
+div.buttongroup1:hover span {
   transform: rotateY(120deg);
   cursor: pointer; }
+
+div.buttongroup2 {
+  display: inline-block;
+  perspective: 100px;
+  perspective-origin: top; }
 
 footer {
   display: flex;
