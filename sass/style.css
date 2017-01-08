@@ -25,7 +25,7 @@ header div.github a {
 
 section#main {
   display: flex;
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
   align-items: center;
   justify-content: center;
   position: relative;
@@ -69,8 +69,7 @@ div.buttongroup1 span {
 
 div.buttongroup1:hover label {
   transform: none;
-  cursor: pointer;
-  font-weight: 100; }
+  cursor: pointer; }
 div.buttongroup1:hover span {
   transform: rotateY(120deg);
   cursor: pointer; }
@@ -100,7 +99,7 @@ div.buttongroup2 div.top {
   display: inline-block;
   position: absolute;
   top: -30px;
-  left: 30px;
+  left: 0px;
   border: 1px solid black;
   border-bottom: 0;
   box-sizing: border-box;
@@ -109,11 +108,13 @@ div.buttongroup2 div.top {
   background: #990000;
   transform-origin: bottom;
   transition: all 100ms;
-  transform: rotateX(90deg) translate3d(-1px, 10px, -1px); }
+  transform: rotateX(90deg) translate3d(-1px, 10px, -1px);
+  z-index: 0; }
 div.buttongroup2 div.left {
   display: inline-block;
-  position: relative;
-  float: left;
+  position: absolute;
+  left: -30px;
+  top: 0;
   border: 1px solid black;
   border-right: 0;
   box-sizing: border-box;
@@ -122,11 +123,13 @@ div.buttongroup2 div.left {
   background: #990000;
   transform-origin: right;
   transition: all 100ms;
-  transform: rotateY(-90deg) translate3d(10px, 1px, -1px); }
+  transform: rotateY(-90deg) translate3d(10px, 1px, -1px);
+  z-index: 0; }
 div.buttongroup2 div.right {
   display: inline-block;
-  position: relative;
-  float: left;
+  position: absolute;
+  right: -30px;
+  top: 0;
   border: 1px solid black;
   border-left: 0;
   box-sizing: border-box;
@@ -135,12 +138,13 @@ div.buttongroup2 div.right {
   background: #990000;
   transform-origin: left;
   transition: all 100ms;
-  transform: rotateY(90deg) translate3d(-10px, 1px, -1px); }
+  transform: rotateY(90deg) translate3d(-10px, 1px, -1px);
+  z-index: 0; }
 div.buttongroup2 div.bottom {
   display: inline-block;
   position: absolute;
   top: 50px;
-  left: 30px;
+  left: 0px;
   border: 1px solid black;
   border-top: 0;
   box-sizing: border-box;
@@ -149,7 +153,8 @@ div.buttongroup2 div.bottom {
   background: #990000;
   transform-origin: top;
   transition: all 100ms;
-  transform: rotateX(-90deg) translate3d(-1px, -10px, 0px); }
+  transform: rotateX(-90deg) translate3d(-1px, -10px, 0px);
+  z-index: 0; }
 
 div.buttongroup2:hover label {
   transform: translateZ(-5px);
