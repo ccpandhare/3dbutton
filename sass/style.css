@@ -43,7 +43,7 @@ div.buttongroup1 label {
   align-items: center;
   justify-content: center;
   float: left;
-  background: red;
+  background: #ff0000;
   color: #fff;
   font-family: sans-serif;
   border: 1px solid black;
@@ -63,7 +63,7 @@ div.buttongroup1 span {
   box-sizing: border-box;
   transform: rotateY(90deg) translateX(-17px) translateZ(-2px);
   transform-origin: left;
-  background: red;
+  background: #990000;
   transition: all 100ms;
   z-index: 0; }
 
@@ -78,7 +78,98 @@ div.buttongroup1:hover span {
 div.buttongroup2 {
   display: inline-block;
   perspective: 100px;
-  perspective-origin: top; }
+  perspective-origin: 160px -30px; }
+
+div.buttongroup2 label {
+  display: inline-flex;
+  height: 50px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  background: #ff0000;
+  color: #fff;
+  font-family: sans-serif;
+  border: 1px solid black;
+  box-sizing: border-box;
+  transform: translateZ(10px);
+  transform-origin: left;
+  transition: all 100ms;
+  z-index: 1; }
+div.buttongroup2 div.top {
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  border: 1px solid black;
+  border-bottom: 0;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  background: #990000;
+  transform-origin: bottom;
+  transition: all 100ms;
+  transform: rotateX(90deg) translate3d(-1px, 10px, -1px); }
+div.buttongroup2 div.left {
+  display: inline-block;
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  border-right: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 50px;
+  background: #990000;
+  transform-origin: right;
+  transition: all 100ms;
+  transform: rotateY(-90deg) translate3d(10px, 1px, -1px); }
+div.buttongroup2 div.right {
+  display: inline-block;
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  border-left: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 50px;
+  background: #990000;
+  transform-origin: left;
+  transition: all 100ms;
+  transform: rotateY(90deg) translate3d(-10px, 1px, -1px); }
+div.buttongroup2 div.bottom {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  border: 1px solid black;
+  border-top: 0;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  background: #990000;
+  transform-origin: top;
+  transition: all 100ms;
+  transform: rotateX(-90deg) translate3d(-1px, -10px, 0px); }
+
+div.buttongroup2:hover label {
+  transform: translateZ(-5px);
+  cursor: pointer; }
+div.buttongroup2:hover div.top {
+  transform: translate3d(0, 0, -5px);
+  background: #ff0000;
+  cursor: pointer; }
+div.buttongroup2:hover div.right {
+  transform: translate3d(0, 0, -5px);
+  background: #ff0000;
+  cursor: pointer; }
+div.buttongroup2:hover div.left {
+  transform: translate3d(0, 0, -5px);
+  background: #ff0000;
+  cursor: pointer; }
+div.buttongroup2:hover div.bottom {
+  transform: translate3d(0, 0, -5px);
+  background: #ff0000;
+  cursor: pointer; }
 
 footer {
   display: flex;
